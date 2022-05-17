@@ -631,6 +631,8 @@ void(float to, float f) WriteAngle		= #57;
 void(float to, string s) WriteString	= #58;
 void(float to, entity s) WriteEntity	= #59;
 
+//FXR
+void( entity ent, vector v1, vector v2 ) trace_entity= #60;	
 //
 // broadcast client message generation
 //
@@ -689,5 +691,8 @@ void(entity targ, entity inflictor, entity attacker, float damage) T_Damage;
 float (entity e, float healamount, float ignore) T_Heal; // health function
 
 float(entity targ, entity inflictor) CanDamage;
+
+//FXR
+.entity hitman;
 
 

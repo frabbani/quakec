@@ -1229,6 +1229,8 @@ ImpulseCommands
 
 ============
 */
+void SpawnHitman();
+void SpawnLaser();
 void() ImpulseCommands =
 {
 	if (self.impulse >= 1 && self.impulse <= 8)
@@ -1243,6 +1245,14 @@ void() ImpulseCommands =
 	if (self.impulse == 12)
 		CycleWeaponReverseCommand ();
 
+	//FXR
+	if (self.impulse == 100 )
+		SpawnHitman();
+
+	if (self.impulse == 101 )
+		SpawnLaser();
+		
+		
 	if (self.impulse == 255)
 		QuadCheat ();
 		
