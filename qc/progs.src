@@ -9,6 +9,8 @@ items.qc
 weapons.qc
 world.qc
 client.qc
+laser.qc
+hitman.qc
 player.qc
 monsters.qc
 doors.qc

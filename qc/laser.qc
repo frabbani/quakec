@@ -8,12 +8,14 @@ void()	laser_point =[	0, laser_point ]
 	vector e = trace_endpos;
 	
 	trace_entity( self.hitman, o, e );
-	setorigin ( self, trace_endpos );
 	if( trace_ent == self.hitman ){
-		setmodel( self, "progs/mine/laserpoint.mdl" );
+		setorigin ( self, trace_endpos );
+		setmodel( self, "progs/mine/sight.spr" );
 	}
-	else
+	else{
+		setorigin ( self, e );
 		setmodel (self, "progs/s_bubble.spr");
+	}
 	
 	
 };
