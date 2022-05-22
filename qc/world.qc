@@ -289,7 +289,8 @@ void() worldspawn =
 	precache_model ("progs/v_light.mdl");
 	
 	//FXR
-	precache_model( "progs/mine/sight.spr" );
+	precache_model( "progs/redsight.spr" );
+	precache_model( "progs/bluesight.spr" );
 
 //
 // Setup light animation tables. 'a' is total darkness, 'z' is maxbright.

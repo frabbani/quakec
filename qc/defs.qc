@@ -693,6 +693,9 @@ float (entity e, float healamount, float ignore) T_Heal; // health function
 float(entity targ, entity inflictor) CanDamage;
 
 //FXR
+float ( entity forent, vector p0, vector p1  ) TraceEntities;
+
+//FXR
 .entity hitman;
 
 
